@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Genies Software — High-Scale Systems, Cloud & AI</title>
+  <meta name="description" content="Genies Software builds reliable, low-latency systems and cloud backends. C++/Python experts for networking, AWS, microservices, and AI agents.">
+  <meta property="og:title" content="Genies Software">
+  <meta property="og:description" content="High-scale systems, networking, cloud, and AI agents.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo.jpg">
+  <link rel="icon" href="assets/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <img src="assets/logo.jpg" alt="TechGenies robot logo">
+      <span>Genies<span class="accent">.software</span></span>
+    </a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#stack">Tech</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="btn small">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1>High‑scale systems, <span class="underline">real‑time networking</span>, and cloud backends that never flinch.</h1>
+          <p class="lead">I’m <strong>Shahar Ston</strong> — SW Team Lead & Engineer. I build <strong>low‑latency</strong> services, <strong>resilient networking</strong> paths, and <strong>AWS‑native</strong> platforms in <strong>C++17</strong> and <strong>Python</strong> for products that operate at global scale.</p>
+          <div class="hero-ctas">
+            <a class="btn" href="#contact">Start a project</a>
+            <a class="btn ghost" href="assets/Shahar-Ston-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+          </div>
+          <div class="trust">
+            <span class="trust-label">Trusted by</span>
+            <ul class="logos">
+              <li><span class="pill">DAZN</span></li>
+              <li><span class="pill">Ottopia (Remote Driving)</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img src="assets/logo.jpg" alt="Genies Software logo artwork">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="wrap">
+      <h2>What I do</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Networking &amp; Low‑Latency</h3>
+          <ul>
+            <li>IP routing, Netfilter/iptables, tc, QoS, VPNs, NAT traversal</li>
+            <li>UDP/TCP pipelines, lock‑free patterns, telemetry ingestion</li>
+            <li>Secure channels (DTLS/TLS), load balancing, observability</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Cloud &amp; Microservices</h3>
+          <ul>
+            <li>AWS: ECS/Fargate, Lambda, API Gateway, DynamoDB, S3, CloudFront</li>
+            <li>Eventing: Kafka, SQS/SNS, gRPC, ZMQ, Protobufs</li>
+            <li>CI/CD: Docker, Terraform, GitHub Actions, Jenkins</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Backend &amp; AI Agents</h3>
+          <ul>
+            <li>FastAPI services in Python, high‑performance C++17 services</li>
+            <li>RAG &amp; AI workflows, data processing, Pydantic v2 schemas</li>
+            <li>System design, code reviews, reliability engineering</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="section alt">
+    <div class="wrap">
+      <h2>Selected work</h2>
+      <div class="work-grid">
+        <article class="work">
+          <h3>Live Sports Platform — DAZN</h3>
+          <p>Backend services powering user predictions &amp; campaigns for <em>300M+</em> users. Built FastAPI microservices, DynamoDB data models, and CloudFront‑fronted APIs with idempotent writes, ETag versioning, and zero‑downtime deploys.</p>
+          <ul class="tags"><li>FastAPI</li><li>DynamoDB</li><li>CloudFront</li><li>ECS</li></ul>
+        </article>
+        <article class="work">
+          <h3>Remote Driving — Ottopia</h3>
+          <p>Designed and implemented UDP‑based relays and traffic shaping for remote vehicle operation over LTE/5G. Lock‑free/low‑copy data paths, resilient failover, and secure links. Led a team of 6 engineers + 2 QA end‑to‑end.</p>
+          <ul class="tags"><li>C++17</li><li>iptables/tc</li><li>Kafka/ZMQ</li><li>Security</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="stack" class="section">
+    <div class="wrap">
+      <h2>Tech I love</h2>
+      <div class="grid-2">
+        <ul class="check">
+          <li>C++17, Python 3.12, Bash</li>
+          <li>FastAPI, gRPC, Protobufs, Kafka, ZMQ</li>
+          <li>Docker, Terraform</li>
+          <li>Linux, networking, observability</li>
+        </ul>
+        <ul class="check">
+          <li>AWS: ECS, Lambda, DynamoDB, S3, CloudFront, Route53</li>
+          <li>Dynamo data modeling, GSIs, pagination, ETags</li>
+          <li>Security: TLS/DTLS, IAM, secrets management</li>
+          <li>DevEx: CI/CD, testing, linting, docs</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section alt">
+    <div class="wrap">
+      <h2>About</h2>
+      <p>SW Team Lead &amp; Engineer with 8+ years building high‑scale, low‑latency systems and 3+ years leading core networking teams. Formerly at Samsung, Imperva; Team Lead at <strong>Ottopia</strong>. I thrive on turning complex ideas into production software and mentoring teams to ship reliably.</p>
+      <p><a href="assets/Shahar-Ston-CV.pdf" target="_blank" rel="noopener">Full CV (PDF)</a></p>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="wrap">
+      <h2>Let’s build.</h2>
+      <p>Tell me about your product and timelines. I’ll respond quickly with a plan, scope, and estimate.</p>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Email</h3>
+          <p><a href="mailto:shaharston@gmail.com">shaharston@gmail.com</a></p>
+        </div>
+        <div class="contact-card">
+          <h3>LinkedIn</h3>
+          <p><a href="https://www.linkedin.com/in/shahar-ston" target="_blank" rel="noopener">linkedin.com/in/shahar-ston</a></p>
+        </div>
+        <div class="contact-card">
+          <h3>Phone</h3>
+          <p><a href="tel:+972523761865">+972-52-3761-865</a> (WhatsApp / Signal)</p>
+        </div>
+      </div>
+      <a class="btn big" href="mailto:shaharston@gmail.com?subject=Project%20inquiry%20—%20Genies.software&body=Hi%20Shahar%2C%20we%27d%20like%20help%20with...">Start a project</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot">
+    <span>© 2025-10-16 Genies Software — Stonbridge Ventures</span>
+    <span>Built with ❤️ using Python &amp; C++ mindsets</span>
+  </div>
+</footer>
+
+</body>
+</html>
