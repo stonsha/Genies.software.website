@@ -19,10 +19,15 @@
 <header class="site-header">
   <div class="wrap nav">
     <a class="brand" href="#top">
-      <img src="assets/logo.jpg" alt="TechGenies robot logo">
+      <img src="assets/logo.jpg" alt="TechGenies robot logo" loading="lazy" decoding="async">
       <span>Genies<span class="accent">.software</span></span>
     </a>
-    <nav>
+
+    <!-- Mobile menu toggle -->
+    <input id="nav-toggle" class="nav-toggle" type="checkbox" aria-label="Open menu">
+    <label for="nav-toggle" class="nav-icon" aria-hidden="true">☰</label>
+
+    <nav class="site-nav">
       <a href="#services">Services</a>
       <a href="#work">Work</a>
       <a href="#stack">Tech</a>
@@ -46,8 +51,8 @@
           <div class="trust">
             <span class="trust-label">Trusted by</span>
             <ul class="logos">
-              <li><img src="assets/dazn_logo.png" alt="dazn logo"></li>
-              <li><img src="assets/ottopia_logo.png" alt="dazn logo"></li>
+              <li><img src="assets/dazn_logo.png" alt="dazn logo" loading="lazy" decoding="async"></li>
+              <li><img src="assets/ottopia_logo.png" alt="dazn logo" loading="lazy" decoding="async"></li>
             </ul>
           </div>
         </div>
@@ -165,6 +170,11 @@
     <span>Built with ❤️ using Python &amp; C++ mindsets</span>
   </div>
 </footer>
-
+<script>
+  (function(){
+    const t=document.getElementById('nav-toggle');
+    document.querySelectorAll('.site-nav a').forEach(a=>a.addEventListener('click',()=>{ t.checked=false; }));
+  })();
+</script>
 </body>
 </html>

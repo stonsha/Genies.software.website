@@ -73,3 +73,61 @@ a:hover{text-decoration:underline}
   .contact-grid{grid-template-columns:1fr}
   .brand span{display:none}
 }
+/* --- Mobile foundations --- */
+:root { --header-h: 64px; }
+img { max-width: 100%; height: auto; display: block; }
+
+/* Ensure anchor links are visible below sticky header */
+section[id], [id^="services"], [id^="work"], [id^="stack"], [id^="about"], [id^="contact"] {
+  scroll-margin-top: var(--header-h);
+}
+
+/* Trusted-by logos sizing */
+.trust .logos img { height: 24px; width: auto; }
+
+/* --- Collapsible nav (mobile-first) --- */
+.nav { position: relative; }
+.nav-toggle { position: absolute; opacity: 0; pointer-events: none; }
+.nav-icon {
+  font-size: 28px; line-height: 1; padding: 8px 10px; border-radius: 8px;
+  cursor: pointer; user-select: none;
+}
+
+/* Hide the menu by default on small screens */
+.site-nav {
+  position: absolute; left: 0; right: 0; top: 100%;
+  display: none; flex-direction: column; gap: 10px;
+  background: rgba(250,249,247,0.98); border-bottom: 1px solid #e6e4e1;
+  padding: 12px 20px;
+}
+
+/* Show when toggled */
+#nav-toggle:checked ~ .site-nav { display: flex; }
+
+/* Make header a bit tighter on phones */
+.site-header .nav { padding: 10px 0; }
+
+/* Hero art scales nicely on phones */
+.hero-art img { max-width: 320px; margin: 0 auto; }
+
+/* Buttons are thumb-friendly */
+.btn, .btn.small { min-height: 44px; }
+
+/* --- Tablet & up --- */
+@media (min-width: 900px) {
+  :root { --header-h: 76px; }
+
+  /* Desktop nav: show inline, hide burger */
+  .nav-icon { display: none; }
+  .site-nav {
+    position: static; display: flex !important; flex-direction: row; gap: 12px;
+    background: transparent; border: none; padding: 0;
+  }
+
+  /* Restore your existing grid layout (already defined) */
+  .hero-art img { max-width: 420px; margin: 0; }
+}
+
+/* Optional: smoother headline scaling without changing your look */
+h1 { font-size: clamp(28px, 3.2vw + 8px, 40px); line-height: 1.15; }
+.lead { font-size: clamp(16px, 1.1vw + 12px, 18px); }
