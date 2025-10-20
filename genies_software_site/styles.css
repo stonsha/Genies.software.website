@@ -131,3 +131,56 @@ section[id], [id^="services"], [id^="work"], [id^="stack"], [id^="about"], [id^=
 /* Optional: smoother headline scaling without changing your look */
 h1 { font-size: clamp(28px, 3.2vw + 8px, 40px); line-height: 1.15; }
 .lead { font-size: clamp(16px, 1.1vw + 12px, 18px); }
+/* --- MOBILE NAV FIX --- */
+
+/* Visually hide the checkbox (accessible) */
+.nav-toggle{
+  position:absolute !important;
+  width:1px;height:1px;margin:-1px;padding:0;border:0;
+  clip:rect(0 0 0 0);clip-path:inset(50%);overflow:hidden;white-space:nowrap;
+}
+
+/* Burger icon (hidden on desktop) */
+.nav-icon{
+  display:inline-block;
+  font-size:28px; line-height:1; padding:8px 10px; border-radius:8px;
+  cursor:pointer; user-select:none;
+}
+
+/* Default: mobile menu is hidden */
+.site-nav{
+  position:absolute; left:0; right:0; top:100%;
+  display:none; flex-direction:column; gap:10px;
+  background:rgba(250,249,247,0.98); border-bottom:1px solid #e6e4e1;
+  padding:12px 20px;
+}
+
+/* When toggled, show it */
+#nav-toggle:checked + .nav-icon + .site-nav{ display:flex; }
+
+/* Trusted-by logos scale nicely */
+.trust .logos img{ height:24px; width:auto; display:block; }
+
+/* Anchor targets don't hide under sticky header */
+[id]{ scroll-margin-top: 76px; }
+
+/* Phones: make header padding tighter */
+.site-header .nav{ padding:10px 0; }
+
+/* Desktop breakpoint: inline nav, hide burger & dropdown styles */
+@media (min-width: 900px){
+  .nav-icon{ display:none; }
+  .site-nav{
+    position:static; display:flex !important; flex-direction:row; gap:12px;
+    background:transparent; border:none; padding:0;
+  }
+}
+
+/* Mild responsive type without changing your look */
+h1{ font-size: clamp(26px, 4vw, 40px); line-height:1.15; }
+.lead{ font-size: clamp(16px, 2.2vw, 18px); }
+
+/* Hero image size on small screens */
+@media (max-width: 900px){
+  .hero-art img{ max-width:320px; margin:0 auto; }
+}
