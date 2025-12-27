@@ -89,24 +89,21 @@ a:hover {
   color: var(--brand);
 }
 
-/* Mobile Navigation Toggle */
+/* Navigation Menu - Desktop default */
+.site-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Mobile Navigation Toggle - Hidden on desktop */
 .nav-toggle {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  clip-path: inset(50%);
-  overflow: hidden;
-  white-space: nowrap;
+  display: none;
 }
 
 .nav-icon {
-  display: inline-block;
+  display: none;
   font-size: 28px;
   line-height: 1;
   padding: 8px 10px;
@@ -119,14 +116,6 @@ a:hover {
 
 .nav-icon:hover {
   background: rgba(0, 0, 0, 0.05);
-}
-
-/* Navigation Menu */
-.site-nav {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
-  align-items: center;
 }
 
 .site-nav a {
@@ -504,14 +493,15 @@ a:hover {
   scroll-margin-top: var(--header-h);
 }
 
-/* Desktop Navigation - Hide burger, show inline nav */
+/* Desktop Navigation - Always visible, no toggle needed */
 @media (min-width: 901px) {
+  .nav-toggle,
   .nav-icon {
-    display: none;
+    display: none !important;
   }
 
   .site-nav {
-    position: static;
+    position: static !important;
     display: flex !important;
     flex-direction: row;
     gap: 12px;
@@ -529,6 +519,22 @@ a:hover {
   }
 
   /* Mobile Navigation */
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
   .nav-icon {
     display: inline-block;
   }
