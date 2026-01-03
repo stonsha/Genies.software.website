@@ -12,53 +12,118 @@
   <link rel="icon" href="assets/logo.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site-header">
   <div class="wrap nav">
     <a class="brand" href="#top">
-      <img src="assets/logo.jpg" alt="TechGenies robot logo" loading="lazy" decoding="async">
+      <div class="brand-logo">
+        <img src="assets/logo.jpg" alt="Genies Software logo" loading="lazy" decoding="async">
+      </div>
       <span>Genies<span class="accent">.software</span></span>
     </a>
 
-    <!-- Add these two lines -->
     <input id="nav-toggle" class="nav-toggle" type="checkbox" aria-label="Open menu">
-    <label for="nav-toggle" class="nav-icon" aria-hidden="true">☰</label>
+    <label for="nav-toggle" class="nav-icon" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
 
-    <!-- Add a class to your nav -->
     <nav class="site-nav" id="site-nav">
       <a href="#services">Services</a>
       <a href="#work">Work</a>
       <a href="#stack">Tech</a>
       <a href="#about">About</a>
-      <a href="#contact" class="btn small">Contact</a>
+      <a href="#contact" class="btn-nav">Get in Touch</a>
     </nav>
   </div>
 </header>
 
 <main id="top">
   <section class="hero">
+    <div class="hero-bg"></div>
     <div class="wrap">
       <div class="hero-grid">
         <div class="hero-copy">
-          <h1>High‑scale systems, <span class="underline">real‑time networking</span>, and cloud backends that never flinch.</h1>
-          <p class="lead">I’m <strong>Shahar Ston</strong> — SW Team Lead & Engineer. I build <strong>low‑latency</strong> services, <strong>resilient networking</strong> paths, and <strong>AWS‑native</strong> platforms in <strong>C++17</strong> and <strong>Python</strong> for products that operate at global scale.</p>
+          <div class="hero-badge">
+            <span class="badge-text">Available for Projects • we make your wish a production grade software</span>
+          </div>
+          <h1>
+            <span class="hero-line">Building high‑scale systems</span>
+            <span class="hero-line highlight">that never flinch</span>
+          </h1>
+          <p class="lead">
+            I'm <strong>Shahar Ston</strong> — Software Team Lead & Engineer specializing in <strong>low‑latency systems</strong>, <strong>real‑time networking</strong>, <strong>AWS‑native</strong> cloud platforms, and <strong>AI Agents with MCP</strong>. I turn complex technical challenges into production‑ready solutions. <strong>Get things done</strong> — that's my approach.
+          </p>
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-number">10+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">300M+</div>
+              <div class="stat-label">Users Served</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Reliability Focus</div>
+            </div>
+          </div>
           <div class="hero-ctas">
-            <a class="btn" href="#contact">Start a project</a>
-            <a class="btn ghost" href="assets/Shahar-Ston-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+            <a class="btn btn-primary" href="#contact">
+              <span>Start a Project</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="btn btn-secondary" href="assets/Shahar-Ston-CV.pdf" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M14 10V13.3333C14 13.6869 13.8595 14.0261 13.6095 14.2761C13.3594 14.5262 13.0203 14.6667 12.6667 14.6667H3.33333C2.97971 14.6667 2.64057 14.5262 2.39052 14.2761C2.14048 14.0261 2 13.6869 2 13.3333V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11.3333 5.33333L8 2L4.66667 5.33333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 2V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Download CV</span>
+            </a>
           </div>
           <div class="trust">
-            <span class="trust-label">Trusted by</span>
+            <span class="trust-label">Trusted by industry leaders</span>
             <ul class="logos">
-              <li><img src="assets/dazn_logo.png" alt="dazn logo" loading="lazy" decoding="async"></li>
-              <li><img src="assets/ottopia_logo.png" alt="ottopia logo" loading="lazy" decoding="async"></li>
+              <li>
+                <img src="assets/dazn_logo.png" alt="DAZN logo" loading="lazy" decoding="async">
+              </li>
+              <li>
+                <img src="assets/ottopia_logo.png" alt="Ottopia logo" loading="lazy" decoding="async">
+              </li>
             </ul>
           </div>
         </div>
-        <div class="hero-art">
-          <img src="assets/logo.jpg" alt="Genies Software logo artwork">
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="code-preview">
+              <div class="code-header">
+                <span class="code-dot"></span>
+                <span class="code-dot"></span>
+                <span class="code-dot"></span>
+                <span class="code-title">ai_agent_service.py</span>
+              </div>
+              <div class="code-content">
+                <pre><code><span class="code-keyword">async def</span> <span class="code-function">process_high_scale_request</span>(req):
+    <span class="code-comment"># MCP-powered AI agent with distributed processing</span>
+    <span class="code-keyword">async with</span> <span class="code-class">MCPClient</span>() <span class="code-keyword">as</span> mcp:
+        <span class="code-comment"># Parallel processing for scale</span>
+        tasks = [
+            mcp.<span class="code-function">call_tool</span>(<span class="code-value">"analyze"</span>, req),
+            mcp.<span class="code-function">call_tool</span>(<span class="code-value">"transform"</span>, req),
+            mcp.<span class="code-function">call_tool</span>(<span class="code-value">"validate"</span>, req)
+        ]
+        results = <span class="code-keyword">await</span> <span class="code-class">asyncio</span>.<span class="code-function">gather</span>(*tasks)
+        <span class="code-keyword">return</span> <span class="code-class">Response</span>(results, status=<span class="code-value">200</span>)</code></pre>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -66,30 +131,63 @@
 
   <section id="services" class="section">
     <div class="wrap">
-      <h2>What I do</h2>
+      <div class="section-header">
+        <span class="section-label">Services</span>
+        <h2>What I Build</h2>
+        <p class="section-description">Specialized expertise in high-performance systems and cloud infrastructure</p>
+      </div>
       <div class="cards">
         <article class="card">
-          <h3>Networking &amp; Low‑Latency</h3>
-          <ul>
-            <li>IP routing, Netfilter/iptables, tc, QoS, VPNs, NAT traversal</li>
-            <li>UDP/TCP pipelines, lock‑free patterns, telemetry ingestion</li>
-            <li>Secure channels (DTLS/TLS), load balancing, observability</li>
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M16 4L4 10V22L16 28L28 22V10L16 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 16L4 10M16 16L28 10M16 16V28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Networking & Low‑Latency</h3>
+          <p class="card-description">Real-time networking solutions optimized for performance and reliability</p>
+          <ul class="card-list">
+            <li>IP routing, Netfilter/iptables, tc, QoS, VPNs</li>
+            <li>UDP/TCP pipelines, lock‑free patterns</li>
+            <li>Secure channels (DTLS/TLS), load balancing</li>
+            <li>Telemetry ingestion & observability</li>
+            <li>AI agent networking with MCP protocols</li>
           </ul>
         </article>
         <article class="card">
-          <h3>Cloud &amp; Microservices</h3>
-          <ul>
-            <li>AWS: ECS/Fargate, Lambda, API Gateway, DynamoDB, S3, CloudFront</li>
-            <li>Eventing: Kafka, SQS/SNS, gRPC, ZMQ, Protobufs</li>
-            <li>CI/CD: Docker, Terraform, GitHub Actions, Jenkins</li>
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M8 12L16 6L24 12V24C24 24.5304 23.7893 25.0391 23.4142 25.4142C23.0391 25.7893 22.5304 26 22 26H10C9.46957 26 8.96086 25.7893 8.58579 25.4142C8.21071 25.0391 8 24.5304 8 24V12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 26V18H20V26" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Cloud & Microservices</h3>
+          <p class="card-description">Scalable AWS-native architectures and distributed systems</p>
+          <ul class="card-list">
+            <li>AWS: ECS/Fargate, Lambda, API Gateway</li>
+            <li>DynamoDB, S3, CloudFront, Route53</li>
+            <li>Eventing: Kafka, SQS/SNS, gRPC, ZMQ</li>
+            <li>MCP-based AI agent deployments on AWS</li>
+            <li>CI/CD: Docker, Terraform, GitHub Actions</li>
           </ul>
         </article>
         <article class="card">
-          <h3>Backend &amp; AI Agents</h3>
-          <ul>
-            <li>FastAPI services in Python, high‑performance C++17 services</li>
-            <li>RAG &amp; AI workflows, data processing</li>
-            <li>System design, code reviews, reliability engineering</li>
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M16 6L4 12L16 18L28 12L16 6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4 20L16 26L28 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4 16L16 22L28 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Backend & AI Agents</h3>
+          <p class="card-description">High-performance services and intelligent automation systems powered by MCP</p>
+          <ul class="card-list">
+            <li>FastAPI & C++17 services</li>
+            <li>AI Agents with MCP (Model Context Protocol)</li>
+            <li>RAG & AI workflows, data processing</li>
+            <li>MCP tool integration & orchestration</li>
+            <li>System design & architecture</li>
+            <li>Code reviews & reliability engineering</li>
           </ul>
         </article>
       </div>
@@ -98,17 +196,42 @@
 
   <section id="work" class="section alt">
     <div class="wrap">
-      <h2>Selected work</h2>
+      <div class="section-header">
+        <span class="section-label">Portfolio</span>
+        <h2>Selected Work</h2>
+        <p class="section-description">Real-world solutions for global-scale platforms</p>
+      </div>
       <div class="work-grid">
         <article class="work">
-          <h3>Live Sports Platform — DAZN</h3>
-          <p>Backend services powering user predictions &amp; campaigns for <em>300M+</em> users. Built FastAPI microservices, DynamoDB data models, and CloudFront‑fronted APIs with idempotent writes, ETag versioning, and zero‑downtime deploys.</p>
-          <ul class="tags"><li>FastAPI</li><li>DynamoDB</li><li>CloudFront</li><li>ECS</li></ul>
+          <div class="work-header">
+            <div class="work-icon">DAZN</div>
+            <span class="work-badge">Live Platform</span>
+          </div>
+          <h3>Live Sports Platform</h3>
+          <p>Backend services powering user predictions & campaigns for <strong>300M+ users</strong>. Built FastAPI microservices, DynamoDB data models, and CloudFront‑fronted APIs with idempotent writes, ETag versioning, and zero‑downtime deployments. Integrated AI agents with MCP for intelligent content recommendations.</p>
+          <ul class="tags">
+            <li>FastAPI</li>
+            <li>DynamoDB</li>
+            <li>CloudFront</li>
+            <li>ECS</li>
+            <li>MCP</li>
+            <li>AWS</li>
+          </ul>
         </article>
         <article class="work">
-          <h3>Remote Driving — Ottopia</h3>
-          <p>Designed and implemented UDP‑based relays and traffic shaping for remote vehicle operation over LTE/5G. Lock‑free/low‑copy data paths, resilient failover, and secure links. Led a team of 6 engineers + 2 QA end‑to‑end.</p>
-          <ul class="tags"><li>C++17</li><li>iptables/tc</li><li>Kafka/ZMQ</li><li>Security</li></ul>
+          <div class="work-header">
+            <div class="work-icon">OTT</div>
+            <span class="work-badge">Remote Systems</span>
+          </div>
+          <h3>Remote Driving Platform</h3>
+          <p>Designed and implemented UDP‑based relays and traffic shaping for remote vehicle operation over LTE/5G. Lock‑free/low‑copy data paths, resilient failover, and secure links. Led a team of <strong>6 engineers + 2 QA</strong> end‑to‑end.</p>
+          <ul class="tags">
+            <li>C++17</li>
+            <li>iptables/tc</li>
+            <li>Kafka/ZMQ</li>
+            <li>Security</li>
+            <li>Networking</li>
+          </ul>
         </article>
       </div>
     </div>
@@ -116,66 +239,172 @@
 
   <section id="stack" class="section">
     <div class="wrap">
-      <h2>Tech I love</h2>
-      <div class="grid-2">
-        <ul class="check">
-          <li>C++17, Python 3.12, Bash</li>
-          <li>FastAPI, gRPC, Protobufs, Kafka, ZMQ</li>
-          <li>Docker, Terraform</li>
-          <li>Linux, networking, observability</li>
-        </ul>
-        <ul class="check">
-          <li>AWS: ECS, Lambda, DynamoDB, S3, CloudFront, Route53</li>
-          <li>Dynamo data modeling, GSIs, pagination, ETags</li>
-          <li>Security: TLS/DTLS, IAM, secrets management</li>
-          <li>DevEx: CI/CD, testing, linting, docs</li>
-        </ul>
+      <div class="section-header">
+        <span class="section-label">Expertise</span>
+        <h2>Tech Stack</h2>
+        <p class="section-description">Technologies I work with daily</p>
+      </div>
+      <div class="stack-grid">
+        <div class="stack-category">
+          <h3 class="stack-title">Languages & Frameworks</h3>
+          <div class="stack-items">
+            <span class="stack-item">C++17</span>
+            <span class="stack-item">Python 3.12</span>
+            <span class="stack-item">Bash</span>
+            <span class="stack-item">FastAPI</span>
+            <span class="stack-item">MCP</span>
+            <span class="stack-item">gRPC</span>
+            <span class="stack-item">Protobufs</span>
+          </div>
+        </div>
+        <div class="stack-category">
+          <h3 class="stack-title">Infrastructure & Tools</h3>
+          <div class="stack-items">
+            <span class="stack-item">Docker</span>
+            <span class="stack-item">Terraform</span>
+            <span class="stack-item">Kafka</span>
+            <span class="stack-item">ZMQ</span>
+            <span class="stack-item">Linux</span>
+            <span class="stack-item">GitHub Actions</span>
+          </div>
+        </div>
+        <div class="stack-category">
+          <h3 class="stack-title">AWS Services</h3>
+          <div class="stack-items">
+            <span class="stack-item">ECS/Fargate</span>
+            <span class="stack-item">Lambda</span>
+            <span class="stack-item">DynamoDB</span>
+            <span class="stack-item">S3</span>
+            <span class="stack-item">CloudFront</span>
+            <span class="stack-item">Route53</span>
+          </div>
+        </div>
+        <div class="stack-category">
+          <h3 class="stack-title">Specializations</h3>
+          <div class="stack-items">
+            <span class="stack-item">System Design</span>
+            <span class="stack-item">Low-Latency</span>
+            <span class="stack-item">AI Agents & MCP</span>
+            <span class="stack-item">Networking</span>
+            <span class="stack-item">Security</span>
+            <span class="stack-item">Observability</span>
+            <span class="stack-item">Reliability</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="about" class="section alt">
     <div class="wrap">
-      <h2>About</h2>
-      <p>v1 SW Team Lead &amp; Engineer with 8+ years building high‑scale, low‑latency systems and 3+ years leading core networking teams. Formerly at Samsung, Imperva; Team Lead at <strong>Ottopia</strong>. I thrive on turning complex ideas into production software and mentoring teams to ship reliably.</p>
-      <p><a href="assets/Shahar-Ston-CV.pdf" target="_blank" rel="noopener">Full CV (PDF)</a></p>
+      <div class="about-grid">
+        <div class="about-content">
+          <span class="section-label">About</span>
+          <h2>Engineering Excellence</h2>
+          <p>Software Team Lead & Engineer with <strong>10+ years</strong> building high‑scale, low‑latency systems and <strong>3+ years</strong> leading core networking teams. Formerly at Samsung, Imperva; Team Lead at <strong>Ottopia</strong>. Expert in <strong>AI Agents with MCP (Model Context Protocol)</strong> for intelligent automation.</p>
+          <p>I thrive on turning complex ideas into production software and mentoring teams to ship reliably. Every system I build is designed for scale, reliability, and maintainability. <strong>Get things done</strong> — I focus on delivering results, not just code. When you need something built, I make it happen.</p>
+          <div class="about-cta">
+            <a class="btn btn-secondary" href="assets/Shahar-Ston-CV.pdf" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M14 10V13.3333C14 13.6869 13.8595 14.0261 13.6095 14.2761C13.3594 14.5262 13.0203 14.6667 12.6667 14.6667H3.33333C2.97971 14.6667 2.64057 14.5262 2.39052 14.2761C2.14048 14.0261 2 13.6869 2 13.3333V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11.3333 5.33333L8 2L4.66667 5.33333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 2V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>View Full CV</span>
+            </a>
+          </div>
+        </div>
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <div class="highlight-number">10+</div>
+            <div class="highlight-label">Years Experience</div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-number">3+</div>
+            <div class="highlight-label">Years Leading Teams</div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-number">100%</div>
+            <div class="highlight-label">Production Focus</div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="contact" class="section contact">
     <div class="wrap">
-      <h2>Let’s build.</h2>
-      <p>Tell me about your product and timelines. I’ll respond quickly with a plan, scope, and estimate.</p>
+      <div class="contact-header">
+        <span class="section-label">Contact</span>
+        <h2>Let's Build Something Great</h2>
+        <p class="section-description">Tell me about your project and timelines. I'll respond quickly with a plan, scope, and estimate. <strong>Let's get things done.</strong></p>
+      </div>
       <div class="contact-grid">
         <div class="contact-card">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
           <h3>Email</h3>
           <p><a href="mailto:shaharston@gmail.com">shaharston@gmail.com</a></p>
         </div>
         <div class="contact-card">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M16 8C16 10.2091 14.2091 12 12 12C9.79086 12 8 10.2091 8 8C8 5.79086 9.79086 4 12 4C14.2091 4 16 5.79086 16 8Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 14V16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M3 20C3 16.6863 5.68629 14 9 14H15C18.3137 14 21 16.6863 21 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
           <h3>LinkedIn</h3>
           <p><a href="https://www.linkedin.com/in/shahar-ston" target="_blank" rel="noopener">linkedin.com/in/shahar-ston</a></p>
         </div>
         <div class="contact-card">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7292C21.7209 20.9841 21.5573 21.2126 21.3528 21.3992C21.1482 21.5857 20.9074 21.7262 20.6446 21.8116C20.3819 21.897 20.103 21.9254 19.828 21.895C16.7425 21.6046 13.787 20.4275 11.19 18.445C8.77382 16.6257 6.72533 14.3912 5.15 11.855C3.23699 8.86099 2.0033 5.46369 1.53 1.92C1.50383 1.64656 1.53159 1.36999 1.61172 1.10778C1.69186 0.845572 1.82261 0.603314 2.00631 0.395665C2.19002 0.188015 2.42269 0.0193659 2.69077 -0.100443C2.95886 -0.220252 3.24701 -0.28579 3.54 -0.293C3.815 -0.293 4.089 -0.293 4.362 -0.293C4.57968 0.00343322 4.81608 0.278068 5.066 0.535C5.681 1.208 6.306 1.87 6.911 2.552C7.19496 2.88403 7.45746 3.23404 7.696 3.6C7.89068 3.89478 7.99995 4.23797 8.012 4.59C8.023 4.816 8.023 5.043 8.012 5.269C7.956 6.007 7.734 6.722 7.362 7.362C7.116 7.799 6.812 8.201 6.457 8.557C6.327 8.687 6.197 8.817 6.067 8.947C5.874 9.14 5.742 9.39 5.687 9.662C5.632 9.934 5.657 10.217 5.757 10.477C6.062 11.297 6.587 12.017 7.277 12.557C7.967 13.097 8.797 13.437 9.677 13.537C9.949 13.592 10.199 13.724 10.392 13.917C10.522 14.047 10.652 14.177 10.782 14.307C11.137 14.662 11.539 14.966 11.976 15.212C12.616 15.584 13.331 15.806 14.069 15.862C14.295 15.873 14.522 15.873 14.748 15.862C15.1001 15.8741 15.4433 15.7648 15.738 15.57C16.104 15.3315 16.454 15.069 16.786 14.785C17.468 14.18 18.13 13.555 18.803 12.94C19.06 12.69 19.3347 12.4536 19.625 12.233C19.919 12.012 20.262 11.9027 20.614 11.891C20.84 11.88 21.067 11.88 21.293 11.891C21.645 11.903 21.988 12.0123 22.283 12.207C22.543 12.307 22.826 12.332 23.098 12.277C23.37 12.222 23.62 12.09 23.813 11.897C23.943 11.767 24.073 11.637 24.203 11.507C24.558 11.152 24.862 10.75 25.108 10.313C25.48 9.673 25.702 8.958 25.758 8.22C25.769 7.994 25.769 7.767 25.758 7.541C25.7459 7.18897 25.6366 6.84578 25.442 6.551C25.203 6.18504 24.9405 5.83503 24.657 5.503C23.975 4.898 23.35 4.273 22.677 3.658C22.42 3.408 22.1454 3.17156 21.857 2.951C21.563 2.7303 21.2193 2.62103 20.867 2.609C20.641 2.598 20.414 2.598 20.188 2.609H19.895C19.602 1.315 18.855 0.220252 17.81 -0.100443C17.5427 -0.220252 17.2546 -0.28579 16.962 -0.293C16.669 -0.28579 16.3811 -0.220252 16.1138 -0.100443C15.8467 0.0193659 15.614 0.188015 15.4303 0.395665C15.2466 0.603314 15.1159 0.845572 15.0357 1.10778C14.9556 1.36999 14.9278 1.64656 14.954 1.92C15.4273 5.46369 16.661 8.86099 18.574 11.855Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
           <h3>Phone</h3>
-          <p><a href="tel:+19492838696">+1 (949) 283 8696</a> </p>
+          <p><a href="tel:+19492838696">+1 (949) 283 8696</a></p>
         </div>
       </div>
-      <a class="btn big" href="mailto:shaharston@gmail.com?subject=Project%20inquiry%20—%20Genies.software&body=Hi%20Shahar%2C%20we%27d%20like%20help%20with...">Start a project</a>
+      <div class="contact-cta">
+        <a class="btn btn-primary btn-large" href="mailto:shaharston@gmail.com?subject=Project%20inquiry%20—%20Genies.software&body=Hi%20Shahar%2C%20we%27d%20like%20help%20with...">
+          <span>Start a Project</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
     </div>
   </section>
 </main>
 
 <footer class="site-footer">
   <div class="wrap foot">
-    <span>© 2025 Genies Software — Stonbridge Ventures</span>
-    <span>Built with ❤️ using Python &amp; C++ mindsets</span>
+    <div class="footer-content">
+      <span>© 2025 Genies Software — Stonbridge Ventures</span>
+      <span class="footer-divider">•</span>
+      <span>Built with precision using Python & C++</span>
+    </div>
   </div>
 </footer>
+
 <script>
   (function(){
-    const t=document.getElementById('nav-toggle');
-    document.querySelectorAll('.site-nav a').forEach(a=>a.addEventListener('click',()=>{ t.checked=false; }));
+    const t = document.getElementById('nav-toggle');
+    if (t) {
+      document.querySelectorAll('.site-nav a').forEach(a => {
+        a.addEventListener('click', () => { 
+          t.checked = false; 
+        });
+      });
+    }
   })();
 </script>
 </body>
 </html>
+
