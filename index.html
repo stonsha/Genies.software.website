@@ -56,7 +56,7 @@
             <span class="hero-line highlight">that never flinch</span>
           </h1>
           <p class="lead">
-            I'm <strong>Shahar Ston</strong> — Software Team Lead & Engineer specializing in <strong>low‑latency systems</strong>, <strong>real‑time networking</strong>, <strong>AWS‑native</strong> cloud platforms, and <strong>AI Agents with MCP</strong>. I turn complex technical challenges into production‑ready solutions. <strong>Get things done</strong> — that's my approach.
+            I'm <strong>Shahar Ston</strong> — Software Architect and Team Lead specializing in <strong>low‑latency systems</strong>, <strong>real‑time networking</strong>, <strong>AWS‑native</strong> cloud platforms, and <strong>AI Agents with MCP</strong>. I turn complex technical challenges into production‑ready solutions. <strong>Get things done</strong> — that's my approach.
           </p>
           <div class="hero-stats">
             <div class="stat">
@@ -101,16 +101,24 @@
           </div>
         </div>
         <div class="hero-visual">
-          <div class="hero-card">
-            <div class="code-preview">
-              <div class="code-header">
-                <span class="code-dot"></span>
-                <span class="code-dot"></span>
-                <span class="code-dot"></span>
-                <span class="code-title">ai_agent_service.py</span>
+          <div class="hero-visual-container">
+            <div class="hero-card logo-card">
+              <div class="logo-preview">
+                <div class="logo-display">
+                  <img src="assets/logo.jpg" alt="Genies Software logo" loading="lazy" decoding="async">
+                </div>
               </div>
-              <div class="code-content">
-                <pre><code><span class="code-keyword">async def</span> <span class="code-function">process_high_scale_request</span>(req):
+            </div>
+            <div class="hero-card">
+              <div class="code-preview">
+                <div class="code-header">
+                  <span class="code-dot"></span>
+                  <span class="code-dot"></span>
+                  <span class="code-dot"></span>
+                  <span class="code-title">ai_agent_service.py</span>
+                </div>
+                <div class="code-content">
+                  <pre><code><span class="code-keyword">async def</span> <span class="code-function">process_high_scale_request</span>(req):
     <span class="code-comment"># MCP-powered AI agent with distributed processing</span>
     <span class="code-keyword">async with</span> <span class="code-class">MCPClient</span>() <span class="code-keyword">as</span> mcp:
         <span class="code-comment"># Parallel processing for scale</span>
@@ -121,6 +129,7 @@
         ]
         results = <span class="code-keyword">await</span> <span class="code-class">asyncio</span>.<span class="code-function">gather</span>(*tasks)
         <span class="code-keyword">return</span> <span class="code-class">Response</span>(results, status=<span class="code-value">200</span>)</code></pre>
+                </div>
               </div>
             </div>
           </div>
@@ -301,7 +310,7 @@
         <div class="about-content">
           <span class="section-label">About</span>
           <h2>Engineering Excellence</h2>
-          <p>Software Team Lead & Engineer with <strong>10+ years</strong> building high‑scale, low‑latency systems and <strong>3+ years</strong> leading core networking teams. Formerly at Samsung, Imperva; Team Lead at <strong>Ottopia</strong>. Expert in <strong>AI Agents with MCP (Model Context Protocol)</strong> for intelligent automation.</p>
+          <p>Software Architect and Team Lead & Engineer with <strong>10+ years</strong> building high‑scale, low‑latency systems and <strong>3+ years</strong> leading core networking teams. Formerly at Samsung, Imperva; Software Architect and Team Lead at <strong>Ottopia</strong>. Expert in <strong>AI Agents with MCP (Model Context Protocol)</strong> for intelligent automation.</p>
           <p>I thrive on turning complex ideas into production software and mentoring teams to ship reliably. Every system I build is designed for scale, reliability, and maintainability. <strong>Get things done</strong> — I focus on delivering results, not just code. When you need something built, I make it happen.</p>
           <div class="about-cta">
             <a class="btn btn-secondary" href="assets/Shahar-Ston-CV.pdf" target="_blank" rel="noopener">

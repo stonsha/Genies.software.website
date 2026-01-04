@@ -102,6 +102,12 @@ a:hover {
   justify-content: center;
   box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
   flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand:hover .brand-logo {
+  transform: scale(1.15);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
 }
 
 .brand-logo img {
@@ -438,12 +444,59 @@ a:hover {
   z-index: 2;
 }
 
+.hero-visual-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .hero-card {
   background: white;
   border-radius: 20px;
   padding: 24px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--border-light);
+  width: 100%;
+}
+
+.logo-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-preview {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid rgba(99, 102, 241, 0.2);
+  display: flex;
+  align-items: stretch;
+}
+
+.logo-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  min-height: 240px;
+  width: 100%;
+  height: 100%;
+}
+
+.logo-display img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  filter: drop-shadow(0 4px 12px rgba(99, 102, 241, 0.3));
+  transition: transform 0.3s ease;
+}
+
+.logo-display:hover img {
+  transform: scale(1.05);
 }
 
 .code-preview {
@@ -1027,6 +1080,25 @@ a:hover {
     position: static;
   }
 
+  .hero-visual-container {
+    gap: 16px;
+  }
+
+  .hero-card {
+    padding: 20px;
+  }
+
+  .logo-display {
+    padding: 0;
+    min-height: 180px;
+  }
+
+  .logo-display img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   .trust {
     order: 2;
   }
@@ -1112,9 +1184,25 @@ a:hover {
     margin-top: 32px;
   }
 
+  .hero-visual-container {
+    gap: 16px;
+  }
+
   .hero-card {
     max-width: 100%;
     margin: 0;
+    padding: 20px;
+  }
+
+  .logo-display {
+    padding: 0;
+    min-height: 160px;
+  }
+
+  .logo-display img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .code-preview {
